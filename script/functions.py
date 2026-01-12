@@ -5,7 +5,7 @@ import pdf2docx
 import docxtpl
 
 # Read pdf into a list of DataFrame
-'''def fromPDFToExcel(pdfName: str):
+def fromPDFToExcel(pdfName: str):
     pdfName = str(input("inserisci il file pdf: "))
     try:
         tabula.io.convert_into(pdfName, pdfName.replace(".pdf", ".csv"), output_format="csv")
@@ -21,14 +21,12 @@ import docxtpl
     else:
         print("Bo")
 
-    os.system(f"ls -la /home/ale/Downloads | grep {pdfName.replace("/home/ale/Downloads", "")}")
-'''
+    os.system(f"ls -la /link/to/pdf/ | grep {pdfName.replace("/link/to/pdf/", "")}")
+
 def fromPDFToWord(pdfName: str):
     Convert = pdf2docx.Converter(pdf_file=pdfName)
     Convert.convert(docx_filename=pdfName.replace(".pdf", ".docx"))
 
-    os.system(f"ls -la /home/ale/Downloads | grep  {pdfName.replace("/home/ale/Downloads/", "")}")
-#os.system("rm -rf /home/ale/.cache/.fr-L3ZH42/Jobs/cat.csv"
+    os.system(f"ls -la | grep  {pdfName.replace("/link/to/pdf/", "")}")
 
-#fromPDFToWord("/home/ale/Downloads/MorelloAlessandroCV.pdf")
-fromPDFToWord("/home/ale/Downloads/MorelloAlessandroCV-1.pdf")
+fromPDFToWord("")
