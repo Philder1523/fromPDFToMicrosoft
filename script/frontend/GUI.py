@@ -8,7 +8,7 @@ from PyQt6.QtWidgets import (
     QFileDialog,
     QStackedWidget)
 
-from functions import (
+from "." import (
     fromPDFToExcel, 
     fromPDFToWord)
 
